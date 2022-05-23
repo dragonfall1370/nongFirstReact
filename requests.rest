@@ -1,0 +1,14 @@
+POST http://localhost:5001/api/users/checktoken
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjgyYjRkNzdkZjQyMThmYWRlYWYyOWIiLCJuYW1lIjoiSm9obiIsImVtYWlsIjoiSm9obi5Vc2VyQGV4YW1wbGUuY29tIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY1MzEyMzc0NiwiZXhwIjoxNjUzMjEwMTQ2fQ.OvYEgResXM6DcyFTctJ94mMXsrE920SUciD2jHjd9go
+
+###
+
+
+POST http://localhost:5001/api/users/signin
+Content-Type: application/json
+
+{
+    "email":"long.den@test.com",
+    "password":"long1234"
+}
