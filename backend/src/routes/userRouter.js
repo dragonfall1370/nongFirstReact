@@ -10,14 +10,15 @@ import { generateToken, isAuth } from "../util.js";
 const userRouter = express.Router();
 
 userRouter.get('/seed', expressAsynceHandler(async (req, res) => {
-    // await User.remove({});
+    await User.remove({});
     const createdUsers = await User.insertMany(data.users);
     res.send({ createdUsers });
 }));
 
 
+
 userRouter.post('/signin', expressAsynceHandler(async (req, res) => {
-    const user = k
+    const user= await User.findOne({email:req.body.email});
     if(user){
         if(bcrypt.compareSync(req.body.password, user.password)){
             res.send({
@@ -32,6 +33,7 @@ userRouter.post('/signin', expressAsynceHandler(async (req, res) => {
     }
         res.status(401).send({message: 'Invalid email or password!'});
 }));
+
 
 
 userRouter.post('/register', expressAsynceHandler(async(req,res) => {

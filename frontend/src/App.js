@@ -27,7 +27,6 @@ function App() {
     try {    
       const resp = await Axios.post(`/api/users/checktoken`, {config1});
       console.log(resp)
-      settoken1(resp);
       return resp
     }catch(err){
       return err.code

@@ -1,6 +1,6 @@
 POST http://localhost:5001/api/users/checktoken
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjgyYjRkNzdkZjQyMThmYWRlYWYyOWIiLCJuYW1lIjoiSm9obiIsImVtYWlsIjoiSm9obi5Vc2VyQGV4YW1wbGUuY29tIiwiaXNBZG1pbiI6ZmFsc2UsImlhdCI6MTY1MzEyMzc0NiwiZXhwIjoxNjUzMjEwMTQ2fQ.OvYEgResXM6DcyFTctJ94mMXsrE920SUciD2jHjd9go
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjhiM2IyOThiOGE1Yzk5ZjQzMjRjZmMiLCJuYW1lIjoiTG9uZyIsImVtYWlsIjoibG9uZy5kZW5AdGVzdC5jb20iLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTMyOTIwMzgsImV4cCI6MTY1MzM3ODQzOH0._76X26rhZzsRLvhO1FTrLxPYttVh8ZeI-6R3EDHZzlg
 
 ###
 
@@ -12,3 +12,6 @@ Content-Type: application/json
     "email":"long.den@test.com",
     "password":"long1234"
 }
+
+###
+GET http://localhost:5001/api/users/seed
